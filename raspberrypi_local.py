@@ -8,9 +8,9 @@ import time
 time.sleep(10)
 
 # sender's email
-sender_address = ""
+sender_address = "my.tasker.emailer@gmail.com"
 # password of the sender
-password = ""
+password = "wh1tec0llar2014"
 # receiver's email
 receiver_address = ""
 
