@@ -8,9 +8,6 @@ cd local_address_pi
 nano local_address_pi.py (or use your favroite text editor; better not be vim tho)
 ```
 
-Change the sender_address variable to you email address that will send the email.
-
-Change the password variable to the password of that email address.
 
 Change the receiver email address variable to your own email.
 
@@ -28,9 +25,9 @@ import time
 time.sleep(10)
 
 # sender's email
-sender_address = "sender.email@gmail.com"
+sender_address = "my.tasker.emailer@gmail.com"
 # password of the sender
-password = "password"
+password = "wh1tec0llar2014"
 # receiver's email
 receiver_address = "my.email@gmail.com"
 
