@@ -2,6 +2,10 @@ import socket
 import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
+import time
+
+# waits for 10 seconds so that the raspberry pi has enough time to get a local ip address
+time.sleep(10)
 
 # sender's email
 sender_address = ""
@@ -35,4 +39,3 @@ server.login(email_address, password)
 
 # sends message
 server.send_message(msg)
-del msg
