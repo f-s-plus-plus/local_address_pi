@@ -12,7 +12,7 @@ sender_address = ""
 # password of the sender
 password = ""
 # receiver's email
-receiver_address = "fsaulean@gmail.com"
+receiver_address = ""
 
 # uses a socket to get local ip address
 my_sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
