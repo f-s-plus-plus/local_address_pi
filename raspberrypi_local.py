@@ -3,26 +3,28 @@ import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
-# sender
-email_address = "my.tasker.emailer@gmail.com"
+# sender's email
+sender_address = ""
 # password of the sender
-password = "wh1tec0llar2014"
-# receiver
+password = ""
+# receiver's email
 receiver_address = "fsaulean@gmail.com"
 
 # uses a socket to get local ip address
 my_sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 my_sock.connect(("8.8.8.8", 80))
+
 # local address of machine
 local_address = my_sock.getsockname()[0]
+
 my_sock.close()
 
 # message for the email
 msg = MIMEMultipart()
 
-msg['From']=email_address
-msg['To']=receiver_address
-msg['Subject']=local_address
+msg['From'] = sender_address
+msg['To'] = receiver_address
+msg['Subject'] = local_address
 
 msg.attach(MIMEText('LOCAL ADDRESS', 'plain'))
 
