@@ -66,8 +66,12 @@ sudo nano /etc/rc.local
 ```
 
 Add the line:
-python3 /path/to/raspberry/local_address_pi/local_address_pi.py before exit 0
+```bash python3 /path/to/raspberry/local_address_pi/local_address_pi.py```
+before 
 
+```bash
+exit 0
+```
 
 Note if the sender email address is not a gmail email, then you will have to change this line:
 server = smtplib.SMTP('SMTP.gmail.com', port=587) 
