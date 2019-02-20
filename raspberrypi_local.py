@@ -4,8 +4,8 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 import time
 
-# waits for 10 seconds so that the raspberry pi has enough time to get a local ip address
-time.sleep(10)
+# waits for 20 seconds so that the raspberry pi has enough time to get a local ip address
+time.sleep(20)
 
 # sender's email
 sender_address = "my.tasker.emailer@gmail.com"
