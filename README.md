@@ -66,7 +66,7 @@ sudo nano /etc/rc.local
 ```
 
 Add the line:
-```python3 /path/to/raspberry/local_address_pi/local_address_pi.py```
+```python3 /path/to/raspberry/local_address_pi/raspberrypi_local.py```
 before 
 ```exit 0```
 
